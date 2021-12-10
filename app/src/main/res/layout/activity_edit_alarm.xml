@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccentLow"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:contentDescription="@string/NULL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_close_black_24dp"
+            android:layout_gravity="start"/>
+
+        <TextView
+            android:id="@+id/titleEditAlarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="80"
+            android:background="@color/colorAccentLow"
+            android:textAlignment="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:contentDescription="@string/NULL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_check_black_24dp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numbersInnerTextColor="@color/colorPrimary"
+        android:numbersSelectorColor="@color/colorAccentLow"
+        android:numbersTextColor="@color/colorPrimary">
+
+    </TimePicker>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_mon"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/day_unclicked"
+                    android:minWidth="38dip"
+                    android:minHeight="38dip"
+                    android:text="M"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_tue"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/day_unclicked"
+                    android:minWidth="38dip"
+                    android:minHeight="38dip"
+                    android:text="T"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_wed"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/day_unclicked"
+                    android:minWidth="38dip"
+                    android:minHeight="38dip"
+                    android:text="W"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_thu"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/day_unclicked"
+                    android:minWidth="38dip"
+                    android:minHeight="38dip"
+                    android:text="T"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_fri"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/day_unclicked"
+                    android:minWidth="38dip"
+                    android:minHeight="38dip"
+                    android:text="F"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_sat"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/day_unclicked"
+                    android:minWidth="38dip"
+                    android:minHeight="38dip"
+                    android:text="S"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_sun"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/day_unclicked"
+                    android:ellipsize="none"
+                    android:minWidth="38dip"
+                    android:minHeight="38dip"
+                    android:text="S"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_alarm_sound_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:contentDescription="@string/NULL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+                <Switch
+                    android:id="@+id/edit_alarm_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="16dp"
+                    android:drawableEnd="@color/colorAccentLow"
+                    android:drawablePadding="16dp"
+                    android:text="@string/edit_alarm_sound"
+                    android:textColor="@color/colorAccentLow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_alarm_vibrate_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:contentDescription="@string/NULL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    app:srcCompat="@drawable/ic_vibration_black_24dp" />
+
+                <Switch
+                    android:id="@+id/edit_alarm_vibrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="16dp"
+                    android:drawableEnd="@color/colorAccentLow"
+                    android:drawablePadding="16dp"
+                    android:text="@string/edit_alarm_vibration"
+                    android:textColor="@color/colorAccentLow" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/alarm_label_editText"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/edit_alarm_description_hint"
+                android:textColor="@color/colorAccentLow"
+                android:textColorHint="@color/colorAccentLow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp">
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="19"
+                    android:max="100"
+                    android:progress="1"
+                    android:progressBackgroundTint="@color/colorAccentLow"/>
+
+                <TextView
+                    android:id="@+id/amountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/colorAccentLow" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

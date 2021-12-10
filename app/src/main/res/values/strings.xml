@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SnoozeLose</string>
+    <string name="navbar_alarms">Alarms</string>
+    <string name="navbar_payments">Payments</string>
+    <string name="navbar_profile">Profile</string>
+    <string name="NULL" translatable="false">null</string>
+
+    <string name="fragment_title_alarms">ALARMS</string>
+    <string name="alarms_fragment_noAlarms">No Alarms :(</string>
+    <string name="alarms_fragment_noAlarmsJoke"><![CDATA[How about adding one? —>]]></string>
+    <string name="alarm_item_border_type" translatable="false">----------------------</string>
+
+    <string name="fragment_title_payments">PAYMENTS</string>
+    <string name="payments_fragment_DEBT">DEBT</string>
+    <string name="payments_fragment_NOTE">"Pick a charity from the list below,
+        to donate and clear this debt.
+        (Or don't, no one is forcing you)"</string>
+
+    <string name="fragment_title_profile">PROFILE</string>
+    <string name="profile_fragment_DEBT">DEBT: </string>
+    <string name="profile_fragment_TempDEBT" translatable="false">100 SEK</string>
+
+    <string name="edit_alarm_description_hint">Alarm Description</string>
+    <string name="edit_alarm_sound">Sound</string>
+    <string name="edit_alarm_vibration">Vibration</string>
+
+    <string name="charity_confirm_dialog_donateAmount" translatable="false">ShowDonateAmount</string>
+    <string name="charity_confirm_dialog_calculateRemaining" translatable="false">CalculateRemainingDebt</string>
+
+    <string name="charity_item_temp1" translatable="false">Lorem Ipsum Dolor</string>
+    <string name="charity_item_temp2" translatable="false">Lorem Ipsum Dolor Sit Amet</string>
+
+    <string name="wakeup_button" translatable="false">Wake up</string>
+    <string name="snooze_button" translatable="false">Snooze</string>
+</resources>
